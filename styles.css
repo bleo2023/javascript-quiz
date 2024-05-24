@@ -1,0 +1,72 @@
+body{
+  background-color: silver;
+  font-family: sans-serif;
+}
+input,label{
+  display: flex;
+
+}
+label{
+  margin-top: 5px;
+}
+#quizclock{
+width: 130px;
+height: 100px;
+background-color: rgb(129, 134, 134);
+margin: 40px auto;
+border-radius: 20px;
+font-size: 4rem;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+}
+button{
+  padding: 15px;
+  border-radius: 10px;
+  background-color: dimgray;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.slide{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 80%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  }
+  .active-slide{
+    opacity: 1;
+    z-index: 2;
+
+}
+.quiz-container{
+  position: relative;
+  height: 150px;
+  margin-top: 100px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+
+  border: 2px solid slateblue;
+  background-color: lavender;
+  color: slateblue;
+}
+
+.hide{
+  display: none;
+
+}
+.congrats{
+  position: absolute;
+  z-index: 5;
+  background-image: url(congratulations-quote.jpg);
+  background-size: contain;
+  width: 90%; /* Ensure the container takes up the entire width of its parent */
+  height: 90%; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
